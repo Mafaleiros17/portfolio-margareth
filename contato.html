@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Contato - Margareth Braghini</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Margareth Braghini</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Sobre mim</a></li>
+                <li><a href="formacao.html">Formação</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contato.html" class="active">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Entre em Contato</h1>
+            <p>Preencha o formulário abaixo para enviar uma mensagem.</p>
+
+            <!-- Formulário de contato -->
+            <form id="formContato">
+
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+
+            </form>
+
+            <!-- Mensagem de status controlada pelo JavaScript -->
+            <p id="statusEnvio"></p>
+
+            <!-- Informações de contato -->
+            <div class="info-contato">
+                <h2>Outras formas de contato</h2>
+                <p><strong>Cidade:</strong> Ribeirão Preto/SP</p>
+                <p><strong>WhatsApp:</strong> 
+                    <a href="https://wa.me/5516994649119" target="_blank">
+                        +55 (16) 99464-9119
+                    </a>
+                </p>
+                <p><strong>E-mail:</strong> 
+                    <a href="mailto:margarethbraghini@gmail.com">
+                        margarethbraghini@gmail.com
+                    </a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 - Portfólio de Margareth Braghini</p>
+    </footer>
+
+</body>
+</html>
