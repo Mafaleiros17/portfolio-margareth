@@ -1,4 +1,7 @@
-/* ======== RESET ======== */
+/* ======================================================
+   RESET BÁSICO
+   Remove espaçamentos padrão e padroniza o comportamento.
+====================================================== */
 * {
     margin: 0;
     padding: 0;
@@ -6,89 +9,114 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Estilos gerais do corpo da página */
 body {
-    background: #f7f7f7;
+    background: #f4f4f4; /* fundo mais suave */
     color: #333;
     line-height: 1.6;
     padding-bottom: 40px;
 }
 
-/* ======== CABEÇALHO ======== */
+/* ======================================================
+   CABEÇALHO (HEADER)
+====================================================== */
 header {
-    background: #222;
+    background: linear-gradient(to right, #1f1f1f, #2d2d2d); /* efeito mais moderno */
     color: #fff;
-    padding: 20px 0;
+    padding: 15px 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25); /* sombra elegante */
 }
 
+/* Nome/Logo */
 header .logo {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bold;
     margin-left: 30px;
+    letter-spacing: 1px;
 }
 
+/* Lista do menu */
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 25px;
     margin-left: 30px;
-    margin-top: 10px;
+    margin-top: 12px;
 }
 
+/* Links do menu */
 nav a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    transition: 0.3s; /* animação suave */
 }
 
+/* Quando passa o mouse ou quando o link está ativo */
 nav a:hover,
 nav a.active {
-    color: #ffcc00;
+    color: #ffdd55;
 }
 
-/* ======== CONTEÚDO ======== */
+/* ======================================================
+   ÁREA PRINCIPAL
+====================================================== */
 main {
     max-width: 1000px;
     margin: 40px auto;
     padding: 0 20px;
 }
 
+/* Títulos */
 h1 {
-    font-size: 32px;
+    font-size: 34px;
     margin-bottom: 20px;
+    color: #222;
 }
 
+/* Parágrafos e itens */
 p, li {
     font-size: 18px;
     margin-bottom: 12px;
 }
 
-/* ======== LISTAS ======== */
+/* ======================================================
+   LISTAS
+====================================================== */
 ul {
     margin-left: 20px;
 }
 
-/* ======== TABELA ======== */
+/* ======================================================
+   TABELA DE FORMAÇÃO
+====================================================== */
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
 }
 
+/* Bordas */
 table, th, td {
     border: 1px solid #ccc;
 }
 
+/* Cabeçalho da tabela */
 th {
-    background: #333;
+    background: #222;
     color: #fff;
-    padding: 10px;
+    padding: 12px;
+    text-align: left;
 }
 
+/* Células */
 td {
-    padding: 10px;
+    padding: 12px;
 }
 
-/* ======== CARDS DO PORTFÓLIO ======== */
+/* ======================================================
+   CARDS DO PORTFÓLIO
+====================================================== */
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -96,23 +124,35 @@ td {
     margin-top: 25px;
 }
 
+/* Estilo dos cartões */
 .card {
     background: white;
     padding: 20px;
     width: 30%;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12); /* sombra mais profissional */
+    transition: transform 0.25s, box-shadow 0.25s;
 }
 
+/* Animação quando passa o mouse */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+}
+
+/* Título do card */
 .card h3 {
     margin-bottom: 15px;
 }
 
+/* Parágrafos dentro do card */
 .card p {
     margin-bottom: 10px;
 }
 
-/* ======== FORMULÁRIO ======== */
+/* ======================================================
+   FORMULÁRIO DE CONTATO
+====================================================== */
 form {
     display: flex;
     flex-direction: column;
@@ -120,6 +160,7 @@ form {
     margin-top: 20px;
 }
 
+/* Campos de texto */
 input, textarea {
     padding: 12px;
     border: 1px solid #aaa;
@@ -127,21 +168,26 @@ input, textarea {
     font-size: 16px;
 }
 
+/* Botão */
 button {
     background: #222;
     color: white;
     padding: 12px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     font-size: 18px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
+/* Efeito quando passa o mouse */
 button:hover {
     background: #444;
 }
 
-/* ======== RODAPÉ ======== */
+/* ======================================================
+   RODAPÉ
+====================================================== */
 footer {
     margin-top: 40px;
     text-align: center;
@@ -150,14 +196,23 @@ footer {
     color: #fff;
 }
 
-/* ======== RESPONSIVIDADE ======== */
+/* ======================================================
+   RESPONSIVIDADE (CELULAR E TABLET)
+====================================================== */
 @media (max-width: 768px) {
+
+    /* Cards ocupam 100% da largura no celular */
     .card {
         width: 100%;
     }
 
+    /* Menu vertical no celular */
     nav ul {
         flex-direction: column;
         gap: 10px;
+    }
+
+    header .logo {
+        margin-left: 15px;
     }
 }
