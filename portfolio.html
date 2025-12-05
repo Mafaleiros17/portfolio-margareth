@@ -4,13 +4,24 @@
     <meta charset="UTF-8">
     <title>Portfólio - Margareth Braghini</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Arquivo CSS responsável pela aparência da página -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Arquivo JavaScript usado no formulário da página Contato -->
     <script src="js/script.js" defer></script>
 </head>
+
 <body>
 
+    <!-- 
+        CABEÇALHO DO SITE
+        Contém o nome e o menu de navegação para todas as páginas.
+    -->
     <header>
         <div class="logo">Margareth Braghini</div>
+
+        <!-- Menu principal -->
         <nav>
             <ul>
                 <li><a href="index.html">Sobre mim</a></li>
@@ -21,27 +32,45 @@
         </nav>
     </header>
 
+    <!-- 
+        CONTEÚDO PRINCIPAL DO PORTFÓLIO
+        Aqui apresento meus projetos reais desenvolvidos durante meus estudos.
+    -->
     <main>
         <section>
+            <!-- Título da página -->
             <h1>Meus Projetos</h1>
+
+            <!-- Texto introdutório explicando o tipo de projetos -->
             <p>
                 Aqui estão alguns projetos que desenvolvi ao longo da minha jornada na área de
                 <strong>Data Analytics</strong>, <strong>Data Science</strong> e <strong>Tecnologia</strong>.
             </p>
 
+            <!-- 
+                Container que organiza os cartões de projetos.
+                Cada projeto aparece como um "card".
+            -->
             <div class="cards">
 
-                <!-- Projeto Netflix -->
+                <!-- ===========================
+                     PROJETO 1 – ANÁLISE NETFLIX
+                ============================ -->
                 <article class="card">
                     <h3>Análise Exploratória – Netflix</h3>
+
+                    <!-- Descrição do projeto -->
                     <p>
                         Projeto em Python explorando o catálogo de filmes da Netflix: duração,
                         ano de lançamento, distribuições, categorias e padrões encontrados no dataset.
                     </p>
+
+                    <!-- Tecnologias utilizadas -->
                     <p>
                         <strong>Tecnologias:</strong> Python, Pandas, Matplotlib, Seaborn.
                     </p>
 
+                    <!-- Link externo para o Kaggle -->
                     <a href="https://www.kaggle.com/code/margarethfaleiros/netflix-movies-analise-exploratoria"
                        target="_blank"
                        class="botao">
@@ -49,41 +78,54 @@
                     </a>
                 </article>
 
-                <!-- Projeto Dashboard Financeiro -->
+                <!-- ===============================
+                     PROJETO 2 – DASHBOARD POWER BI
+                ================================ -->
                 <article class="card">
                     <h3>Dashboard Financeiro – Power BI</h3>
+
                     <p>
                         Dashboard interativo mostrando receitas, despesas, categorias e tendência mensal,
                         permitindo decisões rápidas e baseadas em dados.
                     </p>
+
                     <p>
                         <strong>Tecnologias:</strong> Excel, Power BI.
                     </p>
                 </article>
 
-                <!-- Projeto SmartPlan -->
+                <!-- ===============================
+                     PROJETO 3 – SMARTPLAN DATAMAVI
+                ================================ -->
                 <article class="card">
                     <h3>SmartPlan – Datamavi</h3>
+
                     <p>
                         Ferramenta desenvolvida para microempreendedores acompanharem indicadores
                         financeiros e operacionais de forma simples e intuitiva.
                     </p>
+
                     <p>
                         <strong>Tecnologias:</strong> Excel, IA, Automação, Python.
                     </p>
                 </article>
 
-                <!-- Projeto Titanic -->
+                <!-- ===============================
+                     PROJETO 4 – ANÁLISE TITANIC
+                ================================ -->
                 <article class="card">
                     <h3>Análise de Sobrevivência – Titanic</h3>
+
                     <p>
                         Estudo exploratório avaliando os fatores que influenciaram a sobrevivência
                         dos passageiros: classe social, idade, gênero e tarifa paga.
                     </p>
+
                     <p>
                         <strong>Tecnologias:</strong> Python, Pandas, Matplotlib, Seaborn.
                     </p>
 
+                    <!-- Link para o repositório no GitHub -->
                     <a href="https://github.com/Mafaleiros17/titanic-eda"
                        target="_blank"
                        class="botao">
@@ -95,6 +137,7 @@
         </section>
     </main>
 
+    <!-- Rodapé simples com direitos autorais -->
     <footer>
         <p>© 2025 - Portfólio de Margareth Braghini</p>
     </footer>

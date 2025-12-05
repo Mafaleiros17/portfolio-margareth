@@ -4,13 +4,24 @@
     <meta charset="UTF-8">
     <title>Contato - Margareth Braghini</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Arquivo de estilos CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Arquivo JavaScript que valida o formulário -->
     <script src="js/script.js" defer></script>
 </head>
+
 <body>
 
+    <!-- 
+        CABEÇALHO DO SITE
+        Contém o nome e o menu, igual em todas as páginas.
+    -->
     <header>
         <div class="logo">Margareth Braghini</div>
+
+        <!-- Menu de navegação -->
         <nav>
             <ul>
                 <li><a href="index.html">Sobre mim</a></li>
@@ -21,48 +32,75 @@
         </nav>
     </header>
 
+    <!-- 
+        CONTEÚDO PRINCIPAL DA PÁGINA
+        Aqui ficam o formulário e as informações de contato.
+    -->
     <main>
         <section>
+
+            <!-- Título da página -->
             <h1>Entre em Contato</h1>
             <p>Preencha o formulário abaixo para enviar uma mensagem.</p>
 
-            <!-- Formulário de contato -->
+            <!-- 
+                FORMULÁRIO DE CONTATO
+                Cada campo usa "required" para ser obrigatório.
+                O JavaScript fará a validação quando o usuário clicar em Enviar.
+            -->
             <form id="formContato">
 
+                <!-- Campo Nome -->
                 <label for="nome">Nome completo:</label>
                 <input type="text" id="nome" name="nome" required>
 
+                <!-- Campo E-mail -->
                 <label for="email">E-mail:</label>
                 <input type="email" id="email" name="email" required>
 
+                <!-- Campo Mensagem -->
                 <label for="mensagem">Mensagem:</label>
                 <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
 
+                <!-- Botão que envia o formulário -->
                 <button type="submit">Enviar</button>
 
             </form>
 
-            <!-- Mensagem de status controlada pelo JavaScript -->
+            <!-- 
+                Esta mensagem será preenchida pelo JavaScript
+                informando se o envio foi bem-sucedido.
+            -->
             <p id="statusEnvio"></p>
 
-            <!-- Informações de contato -->
+            <!-- 
+                OUTRAS INFORMAÇÕES DE CONTATO
+                Inclui WhatsApp, e-mail e localização.
+            -->
             <div class="info-contato">
                 <h2>Outras formas de contato</h2>
+
                 <p><strong>Cidade:</strong> Ribeirão Preto/SP</p>
-                <p><strong>WhatsApp:</strong> 
+
+                <p>
+                    <strong>WhatsApp:</strong>
                     <a href="https://wa.me/5516994649119" target="_blank">
                         +55 (16) 99464-9119
                     </a>
                 </p>
-                <p><strong>E-mail:</strong> 
+
+                <p>
+                    <strong>E-mail:</strong>
                     <a href="mailto:margarethbraghini@gmail.com">
                         margarethbraghini@gmail.com
                     </a>
                 </p>
             </div>
+
         </section>
     </main>
 
+    <!-- Rodapé do site -->
     <footer>
         <p>© 2025 - Portfólio de Margareth Braghini</p>
     </footer>
